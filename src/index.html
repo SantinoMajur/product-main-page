@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="../dist/tailwind.css">
+</head>
+
+<body>
+  <nav class="bg-transparent">
+    <div class="lg:max-w-6xl mx-auto md:border-b px-4 relative">
+      <div class="flex justify-between items-center">
+        <div class="flex space-x-3 md:space-x-16 items-center">
+          <div class=" flex items-center">
+            <button class="mobile-menu-button ">
+              <img src="./images/icon-menu.svg" alt="">
+            </button>
+          </div>
+          <div>
+            <a href="#" class="py-4 px-3 text-gray-800 font-bold">
+              <img src="./images/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="hidden lg:flex items-center space-x-4">
+            <a href="#" class="py-4 px-2 text-gray-600 hover:text-gray-900">Collections</a>
+            <a href="#" class="py-4 px-2 text-gray-600 hover:text-gray-900">Men</a>
+            <a href="#" class="py-4 px-2 text-gray-600 hover:text-gray-900">Women</a>
+            <a href="#" class="py-4 px-2 text-gray-600 hover:text-gray-900">About</a>
+            <a href="#" class="py-4 px-2 text-gray-600 hover:text-gray-900">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-between space-x-1 md:space-x-4">
+          <a href="#" class="py-4 px-2 hover:text-gray-900">
+            <img src="./images/icon-cart.svg" alt="">
+          </a>
+          <a href="#" class="py-4 px-2 hover:text-gray-900">
+            <img class="w-8 h-8 md:w-11 md:h-11" src="./images/image-avatar.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!--Mobile-->
+      <div class="mobile-menu hidden md:hidden absolute top-0 left-0 bg-white w-8/12 h-screen py-20 z-40">
+        <div class="absolute top-6 left-6">
+          <button class="mobile-close-button">
+            <img src="./images/icon-close.svg" alt="">
+          </button>
+        </div>
+        <div>
+          <a href="#" class="block py-2 px-6 text-lg text-gray-900 font-bold hover:bg-gray-200">Collections</a>
+          <a href="#" class="block py-2 px-6 text-lg text-gray-900 font-bold hover:bg-gray-200">Men</a>
+          <a href="#" class="block py-2 px-6 text-lg text-gray-900 font-bold hover:bg-gray-200">Women</a>
+          <a href="#" class="block py-2 px-6 text-lg text-gray-900 font-bold hover:bg-gray-200">About</a>
+          <a href="#" class="block py-2 px-6 text-lg text-gray-900 font-bold hover:bg-gray-200">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="flex flex-col lg:max-w-6xl lg:mx-auto">
+      <div class="lg:py-5 lg:px-6">
+        <img class="lg:rounded-3xl lg:p-4 lg:w-11/12 lg:mx-auto z-0" src="./images/image-product-1.jpg" alt="">
+        <div class="md:hidden lg:flex lg:justify-between lg:py-6 lg:px-5">
+          <img class="w-24 h-24 rounded-md" src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img class="w-24 h-24 rounded-md" src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img class="w-24 h-24 rounded-md" src="./images/image-product-3-thumbnail.jpg" alt="">
+          <img class="w-24 h-24 rounded-md" src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+        <div class="relative flex items-center z-10">
+          <a class="absolute -top-36 left-0 bg-gray-200 rounded-full flex items-center w-9 h-9 mx-1 px-3" href="#">
+            <img src="./images/icon-previous.svg" alt="">
+          </a>
+          <a class="absolute -top-36 right-0 bg-gray-200 rounded-full flex items-center w-9 h-9 mx-1 px-3" href="#">
+            <img src="./images/icon-next.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="pt-5 lg:pt-24 lg:px-6 lg:max-w-lg">
+        <h2 class="text-orange-400 text-sm font-semibold uppercase py-2">sneaker company</h2>
+        <h1 class="text-gray-900 font-extrabold text-5xl py-3 leading-none">Fall Limited Edition Sneakers</h1>
+        <p class="text-gray-600 py-5">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they
+          withstand everything the weather can offer.</p>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-5">
+              <h3 class="text-3xl font-bold text-gray-900">$125.00</h3>
+              <h3 class="text-xl text-orange-800 bg-orange-200 font-bold px-2 rounded">50%</h3>
+            </div>
+            <h3 class="py-3 text-gray-500"><strike>$250.00</strike></h3>
+          </div>
+          <div class="flex items-center justify-between gap-5">
+            <button class="flex items-center justify-between w-5/12 px-2 py-3.5 bg-gray-200 rounded-md">
+              <img class="px-2" src="./images/icon-minus.svg" alt="">
+              <span>0</span>
+              <img class="px-2" src="./images/icon-plus.svg" alt="">
+            </button>
+            <button class="flex py-3.5 px-2  bg-orange-500 text-gray-100 rounded-md w-7/12 items-center justify-center">
+              <img class="px-2" src="./images/icon-cart1.svg" alt="">
+              <span class="px-2">Add to Cart</span>
+            </button>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
